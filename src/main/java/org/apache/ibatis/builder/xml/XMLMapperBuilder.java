@@ -157,7 +157,7 @@ public class XMLMapperBuilder extends BaseBuilder {
       cacheRefElement(context.evalNode("cache-ref"));
 //              <cache blocking="" eviction="" flushInterval="" readOnly="" size="" type=""/>
       cacheElement(context.evalNode("cache"));
-      //   <parameterMap id="hc" type="com.huifer.mybatis.entity.PersonQuery">
+      //   <parameterMap id="hc" type="com.huifer.mybatis.entity.PersonQuery"> 该标签已经废弃
       parameterMapElement(context.evalNodes("/mapper/parameterMap"));
       //   <resultMap id="base" type="com.huifer.mybatis.entity.Person">
       resultMapElements(context.evalNodes("/mapper/resultMap"));

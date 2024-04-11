@@ -50,7 +50,7 @@
 
     <resultMap id="blogUsingConstructorWithResultMap" type="Blog">
         <constructor>
-            <idArg column="id" javaType="_int"/>
+            <idArg column="id" javaType="_int" />
             <arg column="title" javaType="java.lang.String"/>
             <arg javaType="org.apache.ibatis.domain.blog.Author" resultMap="org.apache.ibatis.binding.BoundAuthorMapper.authorResultMap"/>
             <arg column="id" javaType="java.util.List" select="selectPostsForBlog"/>
