@@ -57,6 +57,7 @@
         </constructor>
     </resultMap>
 
+
     <resultMap id="blogUsingConstructorWithResultMapAndProperties" type="Blog">
         <constructor>
             <idArg column="id" javaType="_int"/>

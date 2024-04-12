@@ -186,6 +186,7 @@ public class DefaultResultSetHandler implements ResultSetHandler {
     // 获取第一个结果
     ResultSetWrapper rsw = getFirstResultSet(stmt);
 
+    // result map映射处理
     List<ResultMap> resultMaps = mappedStatement.getResultMaps();
     int resultMapCount = resultMaps.size();
     validateResultMapsCount(rsw, resultMapCount);
