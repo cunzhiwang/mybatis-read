@@ -106,7 +106,7 @@ public class XMLMapperBuilder extends BaseBuilder {
       //  </mappers>
       // 将  resource 属性值添加
       configuration.addLoadedResource(resource);
-      // mapper 和 namespace 绑定
+      // mapper 和 namespace 绑定,顺便处理select注解标签
       bindMapperForNamespace();
     }
 
